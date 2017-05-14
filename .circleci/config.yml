@@ -12,10 +12,9 @@ jobs:
             curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-155.0.0-linux-x86_64.tar.gz
             tar xzvf google-cloud-sdk-155.0.0-linux-x86_64.tar.gz
             cd google-cloud-sdk
-            sh ./install.sh
+            sh ./install.sh -q --additional-components pubsub-emulator --rc-path ~/.bashrc --usage-reporting false
             cd ..
             source ~/.bash_profile
-            gcloud components install pubsub-emulator
             echo "Fetching glide; note GOPATH is $GOPATH"
             curl http://glide.sh/get | /bin/bash
             echo "Building"
