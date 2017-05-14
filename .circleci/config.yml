@@ -12,7 +12,7 @@ jobs:
             curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-155.0.0-linux-x86_64.tar.gz
             tar xzf google-cloud-sdk-155.0.0-linux-x86_64.tar.gz
             cd google-cloud-sdk
-            sh ./install.sh -q --additional-components pubsub-emulator --usage-reporting false
+            sh ./install.sh -q --additional-components beta pubsub-emulator --usage-reporting false
             cd ..
             bash -c 'source /go/src/github.com/SignifAi/snap-plugin-publisher-pubsub/google-cloud-sdk/path.bash.inc; echo "gcloud? $(which gcloud) PATH $PATH"'
             echo "Fetching glide; note GOPATH is $GOPATH"
