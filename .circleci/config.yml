@@ -14,7 +14,7 @@ jobs:
             cd google-cloud-sdk
             sh ./install.sh -q --additional-components pubsub-emulator --rc-path ~/.bashrc --usage-reporting false
             cd ..
-            source ~/.bash_profile
+            source ~/.bashrc
             echo "Fetching glide; note GOPATH is $GOPATH"
             curl http://glide.sh/get | /bin/bash
             echo "Building"
