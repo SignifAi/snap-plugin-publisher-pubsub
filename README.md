@@ -16,6 +16,8 @@ Publishes snap SignifAI metrics to google pubsub.
 6. [Acknowledgements](#acknowledgements)
 
 ## Getting Started
+This plug-in was created to push metric events into SignifAI using Google Cloud PubSub. However, we thought it will be useful to create a generic plug in for PubSub as much as possible. You can use it without any account with SignifAI.
+The main reason it's useful is to be able and push metric events under HIPAA compliace regulation. 
 ### System Requirements 
 * [golang 1.8+](https://golang.org/dl/) (needed only for building)
   Context is in stdlib from 1.7.
@@ -26,8 +28,8 @@ All OSs currently supported by snap:
 * Darwin/amd64
 
 ### Installation
-#### Download signifai plugin binary:
-You can get the pre-built binaries for your OS and architecture under the plugin's [release](https://github.com/SignifAi/snap-plugin-publisher-pubsub/releases) page.  For Snap, check [here](https://github.com/intelsdi-x/snap/releases).
+#### Download Snap binary:
+For Snap, check [here](https://github.com/intelsdi-x/snap/releases).
 
 
 #### To build the plugin binary:
@@ -77,6 +79,8 @@ work with. There are three (3) configuration settings you can use.
 Setting|Description|Required?|
 |-------|-----------|---------|
 |service_key|Google Service Account Key.|Yes|
+|serialization|json or msgpack|choose one of them.|
+|project_id|Your Google Cloud account|Yes|
 
 ```
 ---
@@ -132,18 +136,16 @@ STATE     ...
 Task-72869b36-def6-47c4-9db2-822f93bb9d1f    Running   ...
 ```
 
-## Documentation
-
-### Roadmap
-
 ## Community Support
+Open an issue for any questions or request. We will do our best to support it.
 
-## Contributing We love contributions!
+## Contributing - We love contributions!
 
-There's more than one way to give back, from examples to blogs to code updates. See our recommended process in [CONTRIBUTING.md](CONTRIBUTING.md).
+There's more than one way to give back, from examples to blogs to code updates. We accept all suggestions using GitHub issues.
 
 ## License
 Released under under the Apache 2.0 [License](LICENSE).
 
 ## Acknowledgements
 * Author: [@SignifAi](https://github.com/SignifAi/)
+* Info: www.signifai.io
