@@ -7,13 +7,10 @@ Publishes snap SignifAI metrics to google pubsub.
   * [System Requirements](#system-requirements)
   * [Installation](#installation)
   * [Configuration and Usage](#configuration-and-usage)
-2. [Documentation](#documentation)
-  * [Examples](#examples)
-  * [Roadmap](#roadmap)
-3. [Community Support](#community-support)
-4. [Contributing](#contributing)
-5. [License](#license-and-authors)
-6. [Acknowledgements](#acknowledgements)
+2. [Community Support](#community-support)
+3. [Contributing](#contributing)
+4. [License](#license-and-authors)
+5. [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 This plug-in was created to push metric events into SignifAI using Google Cloud PubSub. However, we thought it will be useful to create a generic plug in for PubSub as much as possible. You can use it without any account with SignifAI.
