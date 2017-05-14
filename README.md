@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/SignifAi/snap-plugin-publisher-pubsub.svg?style=svg)](https://circleci.com/gh/SignifAi/snap-plugin-publisher-pubsub)
+
 # snap-plugin-publisher-pubsub
 Snap-Telematry Plugin for Google Cloud Pub/Sub
 
