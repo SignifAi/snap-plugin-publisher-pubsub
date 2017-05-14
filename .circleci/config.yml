@@ -9,6 +9,7 @@ jobs:
       - run:
           command: |
             echo "---"
+            gcloud components install pubsub-emulator
             echo "Fetching glide; note GOPATH is $GOPATH"
             curl http://glide.sh/get | /bin/bash
             echo "Building"
