@@ -5,4 +5,4 @@ license: Apache-2.0
 description: "Publishes SignifAI Metrics to Google PubSub."
 badge:
 ci:
-status: Experimental
+status: Beta
