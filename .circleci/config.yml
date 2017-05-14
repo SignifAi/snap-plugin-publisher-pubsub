@@ -14,8 +14,9 @@ jobs:
             cd google-cloud-sdk
             sh ./install.sh -q --additional-components pubsub-emulator --rc-path ~/.bashrc --usage-reporting false
             cd ..
-            source ~/.bashrc
+            source /home/circleci/.bashrc
             echo "gcloud? $(which gcloud)"
+            echo "bashrc? $(cat /home/circleci/.bashrc)"
             echo "Fetching glide; note GOPATH is $GOPATH"
             curl http://glide.sh/get | /bin/bash
             echo "Building"
