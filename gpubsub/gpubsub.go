@@ -20,7 +20,7 @@ import (
 
 var MissingHostServiceApplication = errors.New("Your Configuration is Missing a Host, Service, or Application Field")
 
-var MissingAuth = errors.New("You Configuration is Missing a Google Account Service Key")
+var MissingAuth = errors.New("Your Configuration is Missing a Google Account Service Key")
 
 // Publisher is a publisher to Google PubSub/SignifAi System
 type Publisher struct {
