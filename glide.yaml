@@ -1,0 +1,14 @@
+package: github.com/SignifAi/snap-plugin-publisher-pubsub
+import:
+- package: github.com/intelsdi-x/snap
+- package: github.com/intelsdi-x/snap-plugin-lib-go
+  subpackages:
+  - v1/plugin
+- package: cloud.google.com/go/pubsub
+- package: github.com/ugorji/go/codec
+- package: google.golang.org/api/option
+- package: golang.org/x/oauth2/google
+- package: github.com/golang/protobuf
+  version: 2bba0603135d7d7f5cb73b2125beeda19c09f4ef
+- package: google.golang.org/grpc
+  version: b2fae0cf40c13b6741fbcc32a7bfa52fdf5c278d
