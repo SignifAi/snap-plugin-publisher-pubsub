@@ -140,7 +140,7 @@ Open an issue for any questions or request. We will do our best to support it.
 
 ## Contributing - We love contributions!
 
-There's more than one way to give back, from examples to blogs to code updates. We accept all suggestions using GitHub issues.
+There's more than one way to give back, from examples to blogs to code updates. We accept all suggestions using pull requests.
 
 ## License
 Released under under the Apache 2.0 [License](LICENSE).
