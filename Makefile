@@ -10,5 +10,4 @@ test:
 				gcloud beta emulators pubsub start --host-port=localhost:8321 &
 				go test -v $$(glide novendor)
 				# kinda dirty
-				disown %1
-				kill -9 $(shell ps aux |grep gcloud | awk {'print $$2'})
+				kill $(shell ps aux |grep gcloud | grep -v grep | awk {'print $$2'})
