@@ -15,6 +15,7 @@ jobs:
             sh ./install.sh -q --additional-components pubsub-emulator --rc-path ~/.bashrc --usage-reporting false
             cd ..
             source ~/.bashrc
+            echo "gcloud? $(which gcloud)"
             echo "Fetching glide; note GOPATH is $GOPATH"
             curl http://glide.sh/get | /bin/bash
             echo "Building"
