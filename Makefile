@@ -1,5 +1,6 @@
 go:
 				glide up
+				sed -i 's:grpc.SupportPackageIsVersion3:grpc.SupportPackageIsVersion4:g' vendor/github.com/intelsdi-x/snap-plugin-lib-go/v1/plugin/rpc/plugin.pb.go
 				go build
 all:
 				go
