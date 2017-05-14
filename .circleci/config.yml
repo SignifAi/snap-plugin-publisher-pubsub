@@ -14,11 +14,11 @@ jobs:
             cd google-cloud-sdk
             sh ./install.sh -q --additional-components pubsub-emulator --rc-path ~/.bashrc --usage-reporting false
             cd ..
-            PATH="$(pwd)/google-cloud-sdk/bin:$PATH" echo "gcloud? $(which gcloud) PATH $PATH"
+            sh -c 'echo "gcloud? $(which gcloud) PATH $PATH"'
             echo "Fetching glide; note GOPATH is $GOPATH"
             curl http://glide.sh/get | /bin/bash
             echo "Building"
             git config --global url.git@github.com:.insteadOf https://github.com/
             make
             echo "Testing"
-            PATH="$(pwd)/google-cloud-sdk/bin:$PATH" make test
+            sh -c 'make test'
