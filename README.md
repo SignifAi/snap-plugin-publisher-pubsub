@@ -1,9 +1,10 @@
-[![CircleCI](https://circleci.com/gh/SignifAi/snap-plugin-publisher-pubsub.svg?style=svg)](https://circleci.com/gh/SignifAi/snap-plugin-publisher-pubsub)
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/SignifAi/snap-plugin-publisher-pubsub)
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/SignifAi/snap-plugin-publisher-pubsub/blob/master/LICENSE)
 
 # snap-plugin-publisher-pubsub
-Snap-Telematry Plugin for Google Cloud Pub/Sub
+Snap-Telematry Plugin for Google Cloud Pub/Sub.
 
-Publishes snap SignifAI metrics to google pubsub.
+Originally designed to support SignifAI.io pusblisher requirements over Google PubSub but can also be used to publish other generic metrics from the framework to Google PubSub service.
 
 1. [Getting Started](#getting-started)
   * [System Requirements](#system-requirements)
@@ -15,8 +16,8 @@ Publishes snap SignifAI metrics to google pubsub.
 5. [Acknowledgements](#acknowledgements)
 
 ## Getting Started
-This plug-in was created to push metric events into SignifAI using Google Cloud PubSub. However, we thought it will be useful to create a generic plug in for PubSub as much as possible. You can use it without any account with SignifAI.
-The main reason it's useful is to be able and push metric events under HIPAA compliace regulation. 
+This plug-in was created to push metric events into SignifAI.io using Google Cloud PubSub. However, we thought it will be useful to create a generic plug-in for Google PubSub as much as possible. You can use it without any requirement for a SignifAI account.
+The main reason it's useful is to be able and push metric events under HIPAA regulations. 
 ### System Requirements 
 * [golang 1.8+](https://golang.org/dl/) (needed only for building)
   Context is in stdlib from 1.7.
